@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soho Comedy House - Coming Soon</title>
+    
+    <!-- 1. Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- 2. Load Google Font: Special Elite --><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    
+    <!-- 3. Configure Tailwind to use this font --><script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'elite': ['"Special Elite"', 'cursive'],
+                    },
+                    colors: {
+                        // Custom colors inspired by the Top Secret Comedy Club
+                        'soho-dark-bg': '#1a1a1a', // Near black for background
+                        'soho-red': '#e53e3e',     // A bright, bold red
+                        'soho-light-blue': '#90cdf4', // For links and accents
+                        'soho-text-light': '#f0f0f0', // Off-white for main text
+                        'soho-text-medium': '#cbd5e0', // Slightly darker text for contrast
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- 4. Apply font and a subtle "ink" effect --><style>
+        body {
+            font-family: 'Special Elite', 'Times New Roman', serif;
+            /* A subtle "ink bleed" effect to make it look more typed */
+            text-shadow: 0 0 1px rgba(0,0,0,0.1);
+        }
+        /* Optional: Add a subtle patterned background for more texture */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiM2NjY2NjYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTAgMTAuOTkyVjIwaDEwLjk5MkwyMCAxMC45OTJWMEgxMC45OTJMMCAxMC45OTJ6TTEwIDlWMkgydjhINmgyVjZoM1Y4SDh2MnptLTktMWg3VjBoLTd2OHoiLz48L2c+PC9nPg=='); /* Subtle diagonal lines */
+            opacity: 0.1; /* Adjust for intensity */
+            pointer-events: none;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="bg-soho-dark-bg flex items-center justify-center min-h-screen p-6">
+
+    <!-- This is the main "sheet of paper" container --><div class="bg-soho-dark-bg max-w-2xl w-full p-8 md:p-12 shadow-xl rounded-md border border-soho-red font-elite text-soho-text-light">
+
+        <!-- Header --><h1 class="text-3xl md:text-4xl font-bold uppercase tracking-wider mb-2 text-soho-red">
+            Soho Comedy House
+        </h1>
+        <p class="text-lg text-soho-text-medium">
+            [ SITE UNDER CONSTRUCTION ]
+        </p>
+
+        <hr class="my-6 border-soho-red">
+
+        <!-- Main Content --><h2 class="text-xl font-bold uppercase tracking-wider text-soho-red mt-6 mb-3">
+            ATTN: NEW COMEDIANS
+        </h2>
+        
+        <p class="text-base md:text-lg text-soho-text-light leading-relaxed mb-4">
+            Our new website is being built, but our stage is always open to new talent.
+        </p>
+        
+        <p class="text-base md:text-lg text-soho-text-light leading-relaxed mb-4">
+            Soho Comedy House is looking for new and aspiring stand-up comedians to get on stage. If you're looking to start your journey in comedy, we want to hear from you.
+        </p>
+
+        <!-- Contact Section --><h3 class="text-xl font-bold uppercase tracking-wider text-soho-red mt-8 mb-3">
+            How To Get In Touch
+        </h3>
+        
+        <p class="text-base md:text-lg text-soho-text-light leading-relaxed mb-4">
+            Please send an email with your details, any prior experience (it's okay if you have none), and a 5-minute clip if you have one.
+        </p>
+        
+        <p class="text-base md:text-lg text-soho-text-light leading-relaxed mb-4">
+            Email us at: 
+            <a href="mailto:booking@30deanstreet.com" class="font-bold text-soho-light-blue underline hover:text-white">
+                booking@30deanstreet.com
+            </a>
+        </p>
+
+        <!-- Location Section --><h3 class="text-xl font-bold uppercase tracking-wider text-soho-red mt-8 mb-3">
+            Location
+        </h3>
+        
+        <p class="text-base md:text-lg text-soho-text-light leading-relaxed">
+            30 Dean Street<br>
+            Soho, London<br>
+            W1D 3RZ
+        </p>
+
+        <!-- Sign-off --><p class="text-right text-lg text-soho-red mt-10">
+            - The Management
+        </p>
+
+    </div>
+
+</body>
+</html>
+
